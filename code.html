@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ajain / Anuf Jabeen</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">AJ</div>
+        <div class="brand-text">
+          <h1>Ajain</h1>
+          <p class="sub">Anuf Jabeen — Portfolio</p>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hello — I’m <span class="accent">Anuf Jabeen</span></h2>
+        <p class="lead">Student & aspiring product developer. I build small web & mobile projects, and I love clean simple design.</p>
+        <p>
+          <a class="btn" href="#work">View Work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About me</h3>
+      <p>
+        I am studying Computer Science with interest in cloud computing, mobile apps, and data analysis.
+        For this lab, I use Odoo for inventory and Netlify to deploy simple web projects.
+      </p>
+      <ul class="quick-list">
+        <li>Cloud computing fundamentals</li>
+        <li>Flutter & Firebase (basic)</li>
+        <li>Simple web deployments</li>
+      </ul>
+    </section>
+
+    <section id="work" class="container work">
+      <h3>Selected Projects</h3>
+
+      <div class="cards">
+        <article class="card">
+          <h4>LapStore (UI)</h4>
+          <p>Flutter-based UI for a configurable laptop store. Focused on minimal and premium UI.</p>
+        </article>
+
+        <article class="card">
+          <h4>Rey Noon (E-commerce)</h4>
+          <p>Perfume e-commerce app idea — product listing, purchase flow and simple inventory demo.</p>
+        </article>
+
+        <article class="card">
+          <h4>Odoo Inventory Demo</h4>
+          <p>Configured products, receipts, delivery orders and sales — used for lab submission.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <p>If you want to reach me, send an email or use the quick form below.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <p><a href="mailto:anuf.jabeen@example.com">anuf.jabeen@example.com</a></p>
+        </div>
+
+        <div class="contact-card">
+          <h4>Quick message</h4>
+          <form action="mailto:anuf.jabeen@example.com" method="get" enctype="text/plain">
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="body" rows="4" placeholder="Write a short message..." required></textarea>
+            <button class="btn" type="submit">Send via Email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Anuf Jabeen • Simple portfolio for lab submission</p>
+    </div>
+  </footer>
+
+  <script>
+    // small JS: set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
